@@ -2,15 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="static/style.css">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOzTCHe8SKnHEEFQrxCttZqNyNUllVz5c"></script>
-
-<script src="script.js"></script>
-<title>GAE Demp APP</title>
+<script src="static/script.js"></script>
 </head>
 
 <body>
-<h1> Hello World</h1>
+<h1>
+	'{{ title | safe }}'
+</h1>
 <div id='map'> </div>
 <script type="text/javascript">
   initMap();
